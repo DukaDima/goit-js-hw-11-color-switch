@@ -19,7 +19,7 @@ let intervalID
 function colorSwitchStart() {
     refs.btnStart.disabled = true;
   refs.btnStop.disabled = false;
-  console.log('START')
+  // console.log('START')
   return intervalID = setInterval(colorSwitch, 1000)
   
 }
@@ -30,7 +30,7 @@ function colorSwitchStop() {
     refs.btnStart.disabled = false;
     refs.btnStop.disabled = true;
     clearInterval(intervalID);
-    console.log('STOP')
+    // console.log('STOP')
 }
 // генерация случайного цвета---------------------------
 
@@ -42,6 +42,6 @@ function colorSwitch() {
   let i = randomIntegerFromInterval(0, colors.length-1);
   
   refs.body.style.backgroundColor = `${colors[i]}`
-  let N = i + 1
-    console.log(`color ${colors[i]} by № ${N} from colors list`)
+  // let N = i + 1
+  //   console.log(`color ${colors[i]} by № ${N} from colors list`)
 }
